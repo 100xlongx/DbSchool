@@ -33,7 +33,20 @@ namespace App
             Console.WriteLine($"Rick's average grade is {grades3}");
 
             //4
-            
+            Console.WriteLine("Querying for student with highest average grade");
+
+            var grades4 = from grades in db.Grades
+            group grades by grades.StudentId into studentGroup
+            select new 
+            {
+                Student = studentGroup.Key,
+                Average = studentGroup.Average(x => x.GradeP)
+            };
+
+            var maxAverage = grades4.ToList().Max(x => x.Average);
+
+            Console.WriteLine($"The max average is {maxAverage}");
+
 
 
 
