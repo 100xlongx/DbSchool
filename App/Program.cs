@@ -9,11 +9,16 @@ namespace App
         static void Main(string[] args)
         {
             var db = new SchoolContext();
+
+            //1
             Console.WriteLine("Querying for a student");
             foreach(var student in db.Students){
                 Console.WriteLine($"{student.Id} : {student.LastName}, {student.FirstName}");
             }
 
+
+            //2
+            Console.WriteLine("Querying for Rick and his grades");
             Student student1 = db.Students.Where(Student => Student.FirstName == "Rick").FirstOrDefault();
 
             Console.WriteLine($"{student1.FirstName} : {student1.LastName}");
@@ -22,7 +27,19 @@ namespace App
             Console.WriteLine($"{grade.CourseName} : {grade.GradeP}")
             );
 
+            //3
+            Console.WriteLine("Querying for Rick and his grades");
+            var grades3 = db.Grades.Where(grade => grade.StudentId == student1.Id).ToList().Average(grade => grade.GradeP);
+            Console.WriteLine($"Rick's average grade is {grades3}");
+
+            //4
             
+
+
+
+
+
+
     }
     }
 }
