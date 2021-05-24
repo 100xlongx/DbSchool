@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
@@ -46,6 +46,26 @@ namespace App
             var maxAverage = grades4.ToList().Max(x => x.Average);
 
             Console.WriteLine($"The max average is {maxAverage}");
+            
+            //5
+            var grades5 = from grades in db.Grades
+            group grades by grades.StudentId into studentGroup
+            select new 
+            {
+                Student = studentGroup.Key,
+                Count = studentGroup.Count(),
+            };
+
+            var maxCount = grades5.ToList().Max(s => s.Count);
+
+            // Student student5 = db.Students.Where(Student => Student.Id == ).FirstOrDefault();
+
+            Console.WriteLine($"The max course count is {maxCount}");
+
+            //6
+
+
+
 
 
 

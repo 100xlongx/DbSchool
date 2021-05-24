@@ -33,7 +33,8 @@ namespace App {
             new Grade { Id = 3, StudentId = 3, CourseName= "Mathematics", GradeP = 0.25F },
             new Grade {Id = 4, StudentId = 1, CourseName= "Mathematics", GradeP = 0.75F },
             new Grade {Id = 5, StudentId = 2, CourseName= "Mathematics", GradeP = 0.85F },
-            new Grade {Id = 6, StudentId = 3, CourseName= "Geometry", GradeP = 0.75F }
+            new Grade {Id = 6, StudentId = 3, CourseName= "Geometry", GradeP = 0.75F },
+            new Grade {Id = 7, StudentId = 2, CourseName= "Venting", GradeP = 0.55F },
             });
 
             base.OnModelCreating(modelBuilder);
