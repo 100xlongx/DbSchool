@@ -21,10 +21,10 @@ namespace App {
         {
 
             modelBuilder.Entity<Student>().HasData(new Student[] {
-            new Student { Id = 1, FirstName = "Pickle", LastName = "Rick" },
-            new Student { Id = 2, FirstName = "Rick", LastName = "Sanchez" },
-            new Student { Id = 3, FirstName = "Tom", LastName = "Hanks" },
-            new Student { Id = 4, FirstName = "Sussy", LastName = "Backa" },
+            new Student { Id = 1, FirstName = "Pickle", LastName = "Rick", Age = 16, classification = Classification.Freshman},
+            new Student { Id = 2, FirstName = "Rick", LastName = "Sanchez", Age = 14, classification = Classification.Sophomore },
+            new Student { Id = 3, FirstName = "Tom", LastName = "Hanks", Age = 17, classification = Classification.Junior },
+            new Student { Id = 4, FirstName = "Sussy", LastName = "Backa", Age = 5, classification = Classification.Senior },
             });
 
             modelBuilder.Entity<Grade>().HasData(new Grade[] { 
