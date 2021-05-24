@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4l0r7j1GN4fQ8iOViWeq62Y6g8MQp1tjoclW5B5UJC+FcJec3PibLpV6baLIMPAeSnktQl1gGj/2Ec2M73NmsQ==",
+  "dgSpecHash": "JOcoV/dzPr7mkoddoF4l2spI/ktq+xrG2zjB0o9ntlVfSlnRs7xDYb91M3IFmdjatkOFM53x5bGG5T2NE79rfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lntinfotech\\DbSchool\\App\\App.csproj",
+  "projectFilePath": "C:\\Users\\Lntinfotech\\galvanize\\dbSchool\\App\\App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lntinfotech\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lntinfotech\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
