@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace App
 {
@@ -6,7 +8,14 @@ namespace App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            var db = new SchoolContext();
+
+            Console.WriteLine("Inserting a new student");
+            // db.Add(new Student { Id = 1 });
+            // db.SaveChanges();
+
+            // Read
+            Console.WriteLine("Querying for a student");
+    }
     }
 }
